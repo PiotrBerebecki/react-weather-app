@@ -7,10 +7,10 @@ const PORT = process.env.PORT || 3000;
 // OpenWeeatherMap free plan operates on http so need to use 
 // express middleware below to redirect all https traffic to http.
 app.use(function (req, res, next) {
-  if (req.headers['x-forwarded-proto'] === 'http') {
-    next();
-  } else {
+  if (req.headers['x-forwarded-proto'] === 'https') {
     res.redirect('http://' + req.hostname + req.url);
+  } else {
+    next();
   }
 });
 
