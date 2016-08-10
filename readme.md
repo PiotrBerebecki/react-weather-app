@@ -1,12 +1,17 @@
 **React Weather Application**
 
-Based on Udemy [The Complete React Web App Developer Course](https://www.udemy.com/the-complete-react-web-app-developer-course/)
+Live version can be seen on [Heroku](http://lit-retreat-43754.herokuapp.com/)
 
-1. Intro
-2. Getting Setup
-3. Hello React
-4. A Better React Project
-5. Routing & Our Weather App
-6. Deploying Your App To Production
-7. Styling Your App With Foundation
-8. Testing & Component Lifecycle
+The app has been developed by Piotr Berebecki as part of undertaking an excellent course: [The Complete React Web App Developer Course](https://www.udemy.com/the-complete-react-web-app-developer-course/) by Andrew Mead.
+
+The technologies used include:
+
+* React
+* ES6
+* Node
+* Webpack
+* Express
+* Foundation (front-end framework)
+* Git
+* GitHub
+* Heroku
