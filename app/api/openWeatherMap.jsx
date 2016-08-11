@@ -1,6 +1,6 @@
 var axios = require('axios');
 
-const OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=93b0b9be965a11f0f099c8c7f74afa63&units=imperial';
+const OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=93b0b9be965a11f0f099c8c7f74afa63&units=metric';
 
 module.exports = {
   getTemp: function (location) {
@@ -11,7 +11,7 @@ module.exports = {
       if (res.data.cod && res.data.message) {
         throw new Error(res.data.message);
       } else {
-        return res.data.main.temp;
+        return Math.round(res.data.main.temp);
       }
     }, function(res) {
       throw new Error(res.data.message);
