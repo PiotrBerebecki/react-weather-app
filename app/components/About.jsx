@@ -14,7 +14,7 @@ var React =  require('react');
 var About = (props) => {
   return (
     <div>
-      <h1 className="subheader text-center">About</h1>
+      <h1 className="page-title text-center">About</h1>
       <p>This app has been developed by <a href="https://github.com/PiotrBerebecki">Piotr Berebecki</a> as part of undertaking an excellent course: <a href="https://www.udemy.com/the-complete-react-web-app-developer-course">The Complete React Web App Developer Course</a> by <a href="http://www.mead.io/">Andrew Mead</a>.</p>
       <p>You can find the full source code <a href="https://github.com/PiotrBerebecki/react-weather-app">here</a>.</p>
       <p>The technologies used include:</p>
@@ -24,7 +24,7 @@ var About = (props) => {
         <li>Node</li>
         <li>Webpack</li>
         <li>Express</li>
-        <li>Axios (promise based Ajax requests)</li>
+        <li>Axios (promise-based Ajax requests)</li>
         <li>Open Weather Map (Weather API)</li>
         <li>Foundation (front-end framework)</li>
         <li>Git</li>
